@@ -35,6 +35,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
+    @IBAction func disconnect(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.set("1970-01-01T11:46:24.452Z", forKey: "tokenExpires")
+        defaults.set("", forKey: "token")
+        defaults.set("", forKey: "url")
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func buildBoardsDict() {
         if boardsDict.count == 0 {

@@ -148,6 +148,11 @@
                                                 <action selector="back:" destination="zPP-nY-SHs" id="UmR-x1-Pms"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Disconnect" id="0ue-SD-4JL">
+                                            <connections>
+                                                <action selector="disconnect:" destination="zPP-nY-SHs" id="Ok1-1y-7Zq"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
